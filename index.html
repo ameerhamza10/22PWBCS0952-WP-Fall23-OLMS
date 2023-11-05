@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Libraray Management Sysems (OLMS)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;padding:1em;background-color:rgb(205, 50, 97);">Online Libraray Management Sysems</h1>
+    <div id="container">
+
+        
+
+        <div id="add-book">
+            <h1>Add New Book</h1>
+            <input type="text" placeholder="Title" name="title" id="title" > 
+            <input type="text" placeholder="Author" name="author" id="author" required>
+            <input type="number" placeholder="ISBN" name="ISBN" id="ISBN" minlength="9" required>
+            <button onclick="bookDetails()" id="add">Add Book</button>
+        </div>
+
+        <div id="book-list">
+            <h1>Book Lists</h1>
+            <ul id="added-book">
+                
+            </ul>
+        </div>
+
+        <div id="searching-book">
+            <h1>Search for Book</h1>
+            <input type="text" placeholder="Search Book" id="search-box" name="search-book">
+            <button onclick="searchBook()">Search</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Times New Roman', Times, serif;
+    
+}
+body{
+    background-color: black;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4em 0;
+}
+#book-list,#add-book,#searching-book{
+    width:25em;
+    height: 25em;
+    margin: 1em;
+    padding: 2em;
+    background-color:rgb(205, 50, 97);
+    border-radius: 2em;
+    text-align: center;
+}
+
+
+#book-list h1,#add-book h1,#searching-book h1{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+input{
+    display: block;
+    width: 18em;
+    height: 3em;
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 0.4em;
+    margin: 2em 0;
+}
+button{
+    padding: 1em 2em;
+    background-color: aqua;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    display: flex;
+    transition: 0.0001s ease-in;
+}
+button:hover{
+    background-color: rgb(90, 83, 83);
+    color: white;
+}
+li{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    list-style: decimal;
+}
